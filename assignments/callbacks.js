@@ -40,7 +40,7 @@ const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum'];
 
 
 function getLength(arr, cb) {
-
+return cb(arr);
   // getLength passes the length of the array into the callback.
 }
 console.log(items.length);
@@ -48,7 +48,7 @@ console.log(items.length);
 function last(arr, cb) {
   // last passes the last item of the array into the callback.
 }
-console.log(last.length);
+console.log(items.last);
 
 function sumNums(x, y, cb) {
   // sumNums adds two numbers (x, y) and passes the result to the callback.
@@ -71,7 +71,7 @@ function contains(item, list, cb) {
   }
   return cb(false)
 }
-console.log();
+console.log((items.list));
 /* STRETCH PROBLEM */
 
 function removeDuplicates(array, cb) {
